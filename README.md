@@ -1,2 +1,4 @@
 # Letu-Andrei.github.io
-Repository for site hosting
+Proiect de atestat
+
+Word frequency list by hermitdave https://github.com/hermitdave/FrequencyWords

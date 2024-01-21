@@ -1,0 +1,53 @@
+p {
+	font-size: 25px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+button {
+	font-size: 25px;
+	background-color: #40b0dd;
+	color: white;
+	padding: 10px 10px;
+	margin: 2px 2px;
+}
+
+.button-box {
+	margin: 0px 50px;
+}
+
+#tutorial {
+	margin: 30px;
+}
+
+#quiz {
+	margin: 50px 30px;
+	width: 500px;
+}
+
+#result {
+	margin: 30px;
+}
+
+.answer-buttons-box {
+	margin-left: 30px;
+}
+
+.answer-button {
+	font-size: 40px;
+	padding: 15px 30px;
+	margin: 10px;
+}
+
+#goodButton {
+	background-color: #50c050;
+}
+
+#badButton {
+	background-color: #c05050;
+}
+
+#word {
+	text-align: center;
+	font-size: 40px;
+}
