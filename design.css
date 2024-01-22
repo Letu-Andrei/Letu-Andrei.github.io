@@ -63,14 +63,16 @@ button {
 	}
 	
 	p {
-	font-size: 60px;
-}
+		font-size: 60px;
+		text-align: justify;
+	}
 	
 	#word {
 		font-size: 100px;
 	}
 	
 	#quiz {
+		padding-top: 200px;
 		margin: auto;
 		display: flex;
 		flex-direction: row;

@@ -29,11 +29,6 @@
 </div>
 
 <div id="quiz" style="display:none">
-	<!--
-	<p id="1"></p>
-	<p id="2"></p>
-	<p id="3"></p>
-	-->
 	<div>
 		<p id="word"></p>
 	</div>
@@ -44,11 +39,6 @@
 </div>
 
 <div id="result" style="display:none">
-	<!--
-	<p id="4"></p>
-	<p id="5"></p>
-	<p id="6"></p>
-	-->
 	<p id="unknownWords"></p>
 	<p id="finalScore"></p>
 	<div class="button-box">
@@ -113,7 +103,6 @@ function recommendWordIndex (currentElo) {
 	index = Math.floor(Math.random() * (right - left + 1)) + left;
 	
 	currentWordIndex = index;
-	//document.getElementById("3").innerHTML = "Current word index is " + index;
 	return index;
 }
 
@@ -123,9 +112,7 @@ function updateElo (score) {
 	userElo += kFactor * (score - expected);
 	
 	kFactor *= kFactorChange;
-	kFactor = Math.max(kFactor, minKFactor);
-	
-	//document.getElementById("2").innerHTML = "Expected score was " + expected + ", current k is " + kFactor + ", user elo is " + userElo + ", and answer count is " + answerCount;
+	kFactor = Math.max(kFactor, minKFactor);	
 }
 
 function calculateKnownWords() {
@@ -154,13 +141,11 @@ function calculateKnownWords() {
 		}
 	}
 	
-	//document.getElementById("5").innerHTML = wordsElo;
 	estimatedVocabularySize = 0.0;
 	for (let i = 0; i < words.length; i++) {
 		expected = 1 / (1 + Math.pow(10, (wordsElo[i] - performanceElo) / 400));
 		estimatedVocabularySize += expected;
 	}
-	//document.getElementById("6").innerHTML = estimatedVocabularySize;
 	
 	return Math.floor(estimatedVocabularySize);
 }
