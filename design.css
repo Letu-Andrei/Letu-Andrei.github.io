@@ -14,6 +14,8 @@ button {
 
 .button-box {
 	margin: 0px 50px;
+	display: flex;
+	flex-direction: row;
 }
 
 #tutorial {
@@ -50,4 +52,26 @@ button {
 #word {
 	text-align: center;
 	font-size: 40px;
+}
+
+@media (max-width: 1000px) {
+	button {
+		font-size: 40px;
+	}
+	
+	.answer-button {
+		font-size: 60px;
+	}
+	
+	p {
+	font-size: 40px;
+}
+	
+	#word {
+		font-size: 60px;
+	}
+	
+	.button-box {
+		flex-direction: column;
+	}
 }
