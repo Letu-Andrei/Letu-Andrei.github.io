@@ -16,6 +16,7 @@ button {
 	margin: 0px 50px;
 	display: flex;
 	flex-direction: row;
+	padding: auto;
 }
 
 #tutorial {
@@ -23,8 +24,11 @@ button {
 }
 
 #quiz {
-	margin: 50px 30px;
-	width: 500px;
+	margin: 100px 60px;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 #result {
@@ -34,20 +38,24 @@ button {
 .answer-button {
 	font-size: 40px;
 	padding: 15px 30px;
-	margin: 10px;
+	margin: 5px auto;
 }
 
 #goodButton {
 	background-color: #50c050;
+	margin-left: auto;
+	margin-right: 20px;
 }
 
 #badButton {
 	background-color: #c05050;
+	margin-left: 20px;
+	margin-right: auto;
 }
 
 #word {
 	text-align: center;
-	font-size: 40px;
+	font-size: 60px;
 }
 
 @media (max-width: 1000px) {
@@ -58,6 +66,7 @@ button {
 	}
 	
 	.answer-button {
+		margin: 5px;
 		font-size: 100px;
 		padding: 40px;
 	}
@@ -74,13 +83,18 @@ button {
 	#quiz {
 		padding-top: 200px;
 		margin: auto;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
 	}
 	
 	.button-box {
 		flex-direction: column;
 		align-items: center;
+	}
+
+	#goodButton {
+		margin: 10px;
+	}
+
+	#badButton {
+		margin: 10px;
 	}
 }
