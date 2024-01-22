@@ -31,10 +31,6 @@ button {
 	margin: 30px;
 }
 
-.answer-buttons-box {
-	margin-left: 30px;
-}
-
 .answer-button {
 	font-size: 40px;
 	padding: 15px 30px;
@@ -56,22 +52,26 @@ button {
 
 @media (max-width: 1000px) {
 	button {
-		font-size: 40px;
+		font-size: 80px;
+		margin: 5px;
+		padding: 20px;
 	}
 	
 	.answer-button {
-		font-size: 60px;
+		font-size: 100px;
+		padding: 30px;
 	}
 	
 	p {
-	font-size: 40px;
+	font-size: 60px;
 }
 	
 	#word {
-		font-size: 60px;
+		font-size: 100px;
 	}
 	
 	.button-box {
 		flex-direction: column;
+		align-items: center;
 	}
 }
