@@ -59,7 +59,7 @@ button {
 	
 	.answer-button {
 		font-size: 100px;
-		padding: 30px;
+		padding: 40px;
 	}
 	
 	p {
@@ -68,6 +68,13 @@ button {
 	
 	#word {
 		font-size: 100px;
+	}
+	
+	#quiz {
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 	}
 	
 	.button-box {
