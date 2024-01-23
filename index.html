@@ -138,6 +138,11 @@ function calculatePerformanceElo () {
 }
 
 function displayUnknownWords() {
+	if (unknownWords.length == 0) {
+		document.getElementById("unknownWords").innerHTML = "No unknown words.";
+		return;
+	}
+	
 	document.getElementById("unknownWords").innerHTML = "Unknown words: ";
 	for (let i = 0; i < unknownWords.length; i++) {
 		document.getElementById("unknownWords").innerHTML += unknownWords[i];
@@ -145,6 +150,7 @@ function displayUnknownWords() {
 			document.getElementById("unknownWords").innerHTML += ", ";
 		}
 	}
+	document.getElementById("unknownWords").innerHTML += ".";
 }
 
 function calculateKnownWords() {
