@@ -189,11 +189,11 @@ function updateScore (score) {
 		displayUnknownWords();
 		
 		knownWords = calculateKnownWords();
-		if (knownWords <= 300) {
-			document.getElementById("finalScore").innerHTML = "You know less than 300 words.";
+		if (knownWords < 1000) {
+			document.getElementById("finalScore").innerHTML = "You know less than <span style=\"color:deepskyblue\">1000</span> words.";
 		}
 		else if (knownWords >= 40000) {
-			document.getElementById("finalScore").innerHTML = "You know over 40000 words.";
+			document.getElementById("finalScore").innerHTML = "You know over <span style=\"color:deepskyblue\">40000</span> words.";
 		}
 		else {
 			document.getElementById("finalScore").innerHTML = "You know around <span style=\"color:deepskyblue\">" + knownWords + "</span> words.";
